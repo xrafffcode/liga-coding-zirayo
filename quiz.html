@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style-quiz.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap"
-      rel="stylesheet"
-    />
-    <title>Waktunya Kuis!</title>
-    <script defer src="assets/js/script-quiz.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style-quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet" />
+  <title>Waktunya Kuis!</title>
+  <script defer src="assets/js/script-quiz.js"></script>
+</head>
+
+<body>
+  <!-- ========== Start Navbar ========== -->
+  <nav class="navbar-1-1 navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <div class="app">
-        <h2 class="question">Pertanyaan</h2>
-        <ul class="answer--list">
-          <li>
-            <input type="radio" name="answer" id="a" class="answer" />
-            <label for="a" id="a--answer">Jawaban</label>
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo-hut.png" alt="" width="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-md-auto gap-2">
+          <li class="nav-item">
+            <a class="nav-link" href="timeline.html">Sejarah</a>
           </li>
-          <li>
-            <input type="radio" name="answer" id="b" class="answer" />
-            <label for="b" id="b--answer">Jawaban</label>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galeri</a>
           </li>
-          <li>
-            <input type="radio" name="answer" id="c" class="answer" />
-            <label for="c" id="c--answer">Jawaban</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="d" class="answer" />
-            <label for="d" id="d--answer">Jawaban</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="e" class="answer" />
-            <label for="e" id="e--answer">Jawaban</label>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Kuis</a>
           </li>
         </ul>
       </div>
-      <button class="submit">Kirim</button>
     </div>
-  </body>
+  </nav>
+  <!-- ========== End Navbar ========== -->
+  <div class="container">
+    <div class="app">
+      <h2 class="question">Pertanyaan</h2>
+      <ul class="answer--list">
+        <li>
+          <input type="radio" name="answer" id="a" class="answer" />
+          <label for="a" id="a--answer">Jawaban</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="b" class="answer" />
+          <label for="b" id="b--answer">Jawaban</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="c" class="answer" />
+          <label for="c" id="c--answer">Jawaban</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="d" class="answer" />
+          <label for="d" id="d--answer">Jawaban</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="e" class="answer" />
+          <label for="e" id="e--answer">Jawaban</label>
+        </li>
+      </ul>
+    </div>
+    <button class="submit">Kirim</button>
+  </div>
+</body>
+
 </html>

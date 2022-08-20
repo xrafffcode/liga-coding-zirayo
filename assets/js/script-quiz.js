@@ -110,6 +110,14 @@ const dAnswer = document.getElementById("d--answer");
 const eAnswer = document.getElementById("e--answer");
 const submit = document.querySelector(".submit");
 
+const AUDIOC = {
+  CLICK: new Audio('/assets/hooh.mp3'),
+}
+
+const AUDIOW = {
+  CLICK: new Audio('/assets/ente.mp3'),
+}
+
 let currentQuiz = 0;
 let score = 0;
 
@@ -144,9 +152,11 @@ submit.addEventListener("click", function () {
   if (answer) {
     if (answer === quizData[currentQuiz].correct) {
       submit.style.backgroundColor = "#44b927";
+      AUDIOC.CLICK.play()
       score++;
     } else {
       submit.style.backgroundColor = "#555";
+      AUDIOW.CLICK.play()
     }
 
     currentQuiz++;
