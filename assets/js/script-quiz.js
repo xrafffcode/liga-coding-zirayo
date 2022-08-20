@@ -111,12 +111,12 @@ const eAnswer = document.getElementById("e--answer");
 const submit = document.querySelector(".btn");
 
 const AUDIOC = {
-  CLICK: new Audio('/assets/hooh.mp3'),
-}
+  CLICK: new Audio("/assets/hooh.mp3"),
+};
 
 const AUDIOW = {
-  CLICK: new Audio('/assets/ente.mp3'),
-}
+  CLICK: new Audio("/assets/ente.mp3"),
+};
 
 let currentQuiz = 0;
 let score = 0;
@@ -151,10 +151,10 @@ submit.addEventListener("click", function () {
   const answer = getSelected();
   if (answer) {
     if (answer === quizData[currentQuiz].correct) {
-      AUDIOC.CLICK.play()
+      AUDIOC.CLICK.play();
       score++;
     } else {
-      AUDIOW.CLICK.play()
+      AUDIOW.CLICK.play();
     }
 
     currentQuiz++;
@@ -162,7 +162,17 @@ submit.addEventListener("click", function () {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quizContainer.innerHTML = `<h2 class="question">Kamu menjawab ${score}/${quizData.length} pertanyaan dengan benar</h2>
+      quizContainer.innerHTML =
+        score < 7
+          ? `<h2 class="question">Skor kamu ${
+              score * 10
+            }%, raih minimal 70% agar bisa menang!</h2>
+        <img class="mx-auto d-block img-fluid" width="400" src="assets/images/quiz/try-again.png" alt="Coba lagi"/>
+      <div class="d-grid gap-2 mt-5">
+        <button class="btn btn-color-theme btn-lg" onclick="location.reload()" type="button">Coba Lagi</button>
+      </div>`
+          : `<h2 class="question">Selamat! Skor kamu ${score * 10}%</h2>
+        <img class="mx-auto d-block img-fluid" width="400" src="assets/images/quiz/congrats.png" alt="Main Lagi"/>
       <div class="d-grid gap-2 mt-5">
         <button class="btn btn-color-theme btn-lg" onclick="location.reload()" type="button">Main Lagi</button>
       </div>`;
