@@ -111,11 +111,11 @@ const eAnswer = document.getElementById("e--answer");
 const submit = document.querySelector(".btn");
 
 const AUDIOC = {
-  CLICK: new Audio("/assets/hooh.mp3"),
+  CLICK: new Audio("/assets/correct.mp3"),
 };
 
 const AUDIOW = {
-  CLICK: new Audio("/assets/ente.mp3"),
+  CLICK: new Audio("/assets/wrong.mp3"),
 };
 
 let currentQuiz = 0;

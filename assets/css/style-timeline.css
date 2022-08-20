@@ -15,7 +15,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #ff0000;
+  background: #E42C2D;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -215,4 +215,22 @@ body {
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link.active {
   font-weight: 500;
+}
+
+.hoverfade {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.hoverfade:hover {
+  opacity: 1;
+}
+
+.rotatetrans {
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+
+.rotatetrans:hover {
+  transform: rotate(-2deg);
 }
