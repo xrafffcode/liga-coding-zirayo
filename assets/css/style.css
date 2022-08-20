@@ -59,8 +59,6 @@ body {
     visibility: visible;
 }
 
-
-
 .content h1 {
     margin-bottom: -10px;
     color: #03a9f4;
@@ -81,6 +79,17 @@ body {
     color: #EA4949;
 }
 
+.row > .col-sm-6 {
+    flex: 0 0 auto;
+    width: 33%;
+}
+
+@media (max-width: 918px) {
+    .row > .col-sm-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
 
 @media (min-width: 767px) {
     .navbar-1-1.navbar-light .navbar-nav .nav-link {
@@ -102,6 +111,13 @@ body {
 
     .pahlawan-kemerdekaan {
         margin-top: 200px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
     }
 }
 
@@ -415,4 +431,10 @@ video {
 
 .text-prok {
     font-family: 'Sniglet', cursive;
+}
+
+.card-body > h1 {
+    color: #000;
+}.card-body > p {
+    color: #000;
 }
