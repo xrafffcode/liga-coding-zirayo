@@ -42,6 +42,7 @@ body {
     transition: background-color .3s,
         opacity .5s, visibility .5s;
     z-index: 1000;
+    display: none;
 }
 
 
@@ -250,12 +251,12 @@ body {
 }
 
 .card0 {
-    background: url("/assets/images/myamin.jpg") center center no-repeat;
+    background: url("/assets/images/pahlawan/myamin.jpg") center center no-repeat;
     background-size: 100%;
 }
 
 .card0:hover {
-    background: url("/assets/images/myamin.jpg") left center no-repeat;
+    background: url("/assets/images/pahlawan/myamin.jpg") left center no-repeat;
     background-size: 600px;
 }
 
@@ -268,12 +269,12 @@ body {
 }
 
 .card1 {
-    background: url("/assets/images/sudirman.jpg") center center no-repeat;
+    background: url("/assets/images/pahlawan/sudirman.jpg") center center no-repeat;
     background-size: 100%;
 }
 
 .card1:hover {
-    background: url("/assets/images/sudirman.jpg") left center no-repeat;
+    background: url("/assets/images/pahlawan/sudirman.jpg") left center no-repeat;
     background-size: 600px;
 }
 
@@ -286,12 +287,12 @@ body {
 }
 
 .card2 {
-    background: url("/assets/images/syahrir.jpg") center center no-repeat;
+    background: url("/assets/images/pahlawan/syahrir.jpg") center center no-repeat;
     background-size: 100%;
 }
 
 .card2:hover {
-    background: url("/assets/images/syahrir.jpg") left center no-repeat;
+    background: url("/assets/images/pahlawan/syahrir.jpg") left center no-repeat;
     background-size: 600px;
 }
 
@@ -304,12 +305,12 @@ body {
 }
 
 .card3 {
-    background: url("/assets/images/soekarno.jpg") center center no-repeat;
+    background: url("/assets/images/pahlawan/soekarno.jpg") center center no-repeat;
     background-size: 100%;
 }
 
 .card3:hover {
-    background: url("/assets/images/soekarno.jpg") left center no-repeat;
+    background: url("/assets/images/pahlawan/soekarno.jpg") left center no-repeat;
     background-size: 600px;
 }
 
@@ -322,12 +323,12 @@ body {
 }
 
 .card4 {
-    background: url("/assets/images/hatta.jpg") center center no-repeat;
+    background: url("/assets/images/pahlawan/hatta.jpg") center center no-repeat;
     background-size: 100%;
 }
 
 .card4:hover {
-    background: url("/assets/images/hatta.jpg") left center no-repeat;
+    background: url("/assets/images/pahlawan/hatta.jpg") left center no-repeat;
     background-size: 600px;
 }
 
@@ -340,12 +341,12 @@ body {
 }
 
 .card5 {
-    background: url("/assets/images/kihajar.jpg") center center no-repeat;
+    background: url("/assets/images/pahlawan/kihajar.jpg") center center no-repeat;
     background-size: 100%;
 }
 
 .card5:hover {
-    background: url("/assets/images/kihajar.jpg") left center no-repeat;
+    background: url("/assets/images/pahlawan/kihajar.jpg") left center no-repeat;
     background-size: 600px;
 }
 
@@ -443,4 +444,24 @@ video {
 
 .card-text-caption {
     font-family: 'Sniglet', cursive;
+}
+
+body .start-quiz__ {
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+body .start-quiz__ p {
+    font-family: 'Sniglet', cursive;
+}
+
+@media screen and (max-width: 768px) {
+    body .start-quiz__ {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.text-theme {
+    color: #D53333;
 }
