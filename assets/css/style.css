@@ -1,5 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'DynaPuff', cursive !important;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #ffffff;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #d53333;
+    border-radius: 10px;
+
+}
+
+#back-to-top {
+    display: inline-block;
+    background-color: #d53333;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    z-index: 1000;
+}
+
+
+#back-to-top:hover {
+    cursor: pointer;
+    background-color: #ef3a3a;
+}
+
+#back-to-top:active {
+    background-color: #ff0000;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-style: italic;
+    color: #96a2a7;
 }
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link {
@@ -24,27 +93,20 @@ body {
     .hero-text {
         margin-top: 180px !important;
     }
+
+    .proklamasi {
+        margin-top: 100px !important;
+    }
+
+    .pahlawan-kemerdekaan {
+        margin-top: 200px !important;
+    }
 }
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link.active {
     font-weight: 500;
 }
 
-.navbar-1-1 .btn-get-started {
-    border-radius: 20px;
-    padding: 12px 30px;
-    font-weight: 500;
-}
-
-.navbar-1-1 .btn-get-started-blue {
-    background-color: #f80e0e;
-    transition: 0.3s;
-}
-
-.navbar-1-1 .btn-get-started-blue:hover {
-    background-color: #ff3a3a;
-    transition: 0.3s;
-}
 
 .img-header {
     position: absolute;
@@ -56,12 +118,20 @@ body {
 .btn-color-theme {
     color: white !important;
     background-color: #d53333 !important;
+    font-family: 'Sniglet', cursive !important;
+    transition: 0.3s;
 }
 
+.btn-color-theme:hover {
+    color: white !important;
+    background-color: #ff0000 !important;
+    font-family: 'Sniglet', cursive !important;
+    transition: 0.3s;
+}
 
 .img-soekarno {
     object-fit: cover;
-    border-radius: 35px
+    border-radius: 15px
 }
 
 .img-soekarno:hover {
@@ -215,6 +285,60 @@ body {
     opacity: 1;
 }
 
+.card3 {
+    background: url("/assets/images/soekarno.jpg") center center no-repeat;
+    background-size: 100%;
+}
+
+.card3:hover {
+    background: url("/assets/images/soekarno.jpg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card3:hover h2 {
+    opacity: 1;
+}
+
+.card3:hover .caption-pahlawan {
+    opacity: 1;
+}
+
+.card4 {
+    background: url("/assets/images/hatta.jpg") center center no-repeat;
+    background-size: 100%;
+}
+
+.card4:hover {
+    background: url("/assets/images/hatta.jpg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card4:hover h2 {
+    opacity: 1;
+}
+
+.card4:hover .caption-pahlawan {
+    opacity: 1;
+}
+
+.card5 {
+    background: url("/assets/images/kihajar.jpg") center center no-repeat;
+    background-size: 100%;
+}
+
+.card5:hover {
+    background: url("/assets/images/kihajar.jpg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card5:hover h2 {
+    opacity: 1;
+}
+
+.card5:hover .caption-pahlawan {
+    opacity: 1;
+}
+
 .card-pahlawan h2 {
     color: #fff;
     margin: 20px;
@@ -250,6 +374,15 @@ body {
 }
 
 
+.proklamasi {
+    margin-top: 50px;
+}
+
+.pahlawan-kemerdekaan {
+    margin-top: 80px;
+}
+
+
 .embed-responsive-item {
     width: 800px;
     justify-content: center;
@@ -259,7 +392,7 @@ body {
     width: auto;
 }
 
-.proklamasi-video > h1 {
+.proklamasi-video>h1 {
     color: white;
 }
 
@@ -268,18 +401,16 @@ video {
     height: auto;
     left: 0;
     top: 0;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 10px;
 }
 
 .video-proklamasi {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+}
+
+.text-prok {
+    font-family: 'Sniglet', cursive;
 }
