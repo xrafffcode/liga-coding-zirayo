@@ -166,13 +166,13 @@ submit.addEventListener("click", function () {
         score < 7
           ? `<h2 class="question">Skor kamu ${score * 10
           }%, raih minimal 70% agar bisa menang!</h2>
-        <img class="mx-auto d-block img-fluid" width="400" src="assets/images/quiz/try-again.png" alt="Coba lagi"/>
-      <div class="d-grid gap-2 mt-5">
+        <img class="mx-auto d-block img-fluid" width="350" src="assets/images/quiz/try-again.png" alt="Coba lagi"/>
+      <div class="d-grid gap-2 mt-2">
         <button class="btn btn-color-theme btn-lg" onclick="location.reload()" type="button">Coba Lagi</button>
       </div>`
-          : `<h2 class="question">Selamat! Skor kamu ${score * 10}%</h2>
-        <img class="mx-auto d-block img-fluid" width="400" src="assets/images/quiz/congrats.png" alt="Main Lagi"/>
-      <div class="d-grid gap-2 mt-5">
+          : `<h2 class="question">Selamat! Skor kamu ${score * 10}%✨</h2>
+        <img class="mx-auto d-block img-fluid" width="350" src="assets/images/quiz/congrats.png" alt="Main Lagi"/>
+      <div class="d-grid gap-2 mt-2">
         <button class="btn btn-color-theme btn-lg" onclick="location.reload()" type="button">Main Lagi</button>
       </div>`;
     }
