@@ -6,6 +6,28 @@ body {
     font-family: 'DynaPuff', cursive !important;
 }
 
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #ffffff;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #d53333;
+    border-radius: 10px;
+
+}
+
 #back-to-top {
     display: inline-block;
     background-color: #d53333;
@@ -351,10 +373,44 @@ body {
     transition: opacity 1s;
 }
 
+
 .proklamasi {
     margin-top: 50px;
 }
 
 .pahlawan-kemerdekaan {
     margin-top: 80px;
+}
+
+
+.embed-responsive-item {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: block;
+    width: auto;
+}
+
+.proklamasi-video>h1 {
+    color: white;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.video-proklamasi {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.text-prok {
+    font-family: 'Sniglet', cursive;
 }
