@@ -12,6 +12,7 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous" />
   <script defer src="assets/js/script-quiz.js"></script>
+  <link href="assets/css/aos.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 
 
@@ -41,7 +42,7 @@
             <a class="nav-link" href="quiz.html">Quiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Teams</a>
+            <a class="nav-link" href="team.html">Developer</a>
           </li>
         </ul>
       </div>
@@ -49,7 +50,7 @@
   </nav>
   <!-- ========== End Navbar ========== -->
   <section class="container">
-    <div class="container bg-white rounded-3 mt-5">
+    <div class="container bg-white rounded-3 mt-5" data-aos="zoom-in">
       <div class="app">
         <h2 class="question">Pertanyaan</h2>
         <ul class="answer--list">
@@ -81,6 +82,11 @@
       </div>
       </nav>
       <!-- ========== End Navbar ========== -->
+
+      <script src="assets/js/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       <script src="assets/js/bootstrap.js" crossorigin="anonymous"></script>
 </body>
 
