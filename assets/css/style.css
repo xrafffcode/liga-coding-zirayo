@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'DynaPuff', cursive !important;
+
 }
 
 * {
@@ -73,6 +74,7 @@ body {
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link {
     transition: 0.3s;
+    text-align: center;
 }
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link:hover {

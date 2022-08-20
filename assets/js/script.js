@@ -20,6 +20,7 @@ const scrollToTop = () => {
     });
 };
 
+
 displayButton();
 scrollToTop();
 

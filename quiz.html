@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet" />
   <title>Waktunya Kuis!</title>
+
+  <link href="assets/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
   <script defer src="assets/js/script-quiz.js"></script>
 </head>
 
@@ -16,8 +18,8 @@
   <!-- ========== Start Navbar ========== -->
   <nav class="navbar-1-1 navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo-hut.png" alt="" width="50" />
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo-hut-white.png" alt="" width="50" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,34 +41,41 @@
     </div>
   </nav>
   <!-- ========== End Navbar ========== -->
-  <div class="container">
-    <div class="app">
-      <h2 class="question">Pertanyaan</h2>
-      <ul class="answer--list">
-        <li>
-          <input type="radio" name="answer" id="a" class="answer" />
-          <label for="a" id="a--answer">Jawaban</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="b" class="answer" />
-          <label for="b" id="b--answer">Jawaban</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="c" class="answer" />
-          <label for="c" id="c--answer">Jawaban</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="d" class="answer" />
-          <label for="d" id="d--answer">Jawaban</label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="e" class="answer" />
-          <label for="e" id="e--answer">Jawaban</label>
-        </li>
-      </ul>
+  <section class="container">
+    <div class="container bg-white rounded-3 mt-5">
+      <div class="app">
+        <h2 class="question">Pertanyaan</h2>
+        <ul class="answer--list">
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a--answer">Jawaban</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b--answer">Jawaban</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c--answer">Jawaban</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d--answer">Jawaban</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="e" class="answer" />
+            <label for="e" id="e--answer">Jawaban</label>
+          </li>
+        </ul>
+        <div class="d-grid gap-2 mt-5 pb-2">
+          <button class="btn btn-color-theme btn-lg" type="button">Kirim Jawaban</button>
+        </div>
+      </div>
+
     </div>
-    <button class="submit">Kirim</button>
-  </div>
+  </section>
+
+  <script src="assets/js/bootstrap.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
