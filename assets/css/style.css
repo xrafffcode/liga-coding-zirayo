@@ -79,13 +79,13 @@ body {
     color: #EA4949;
 }
 
-.row > .col-sm-6 {
+.row>.col-sm-6 {
     flex: 0 0 auto;
     width: 33%;
 }
 
 @media (max-width: 918px) {
-    .row > .col-sm-6 {
+    .row>.col-sm-6 {
         flex: 0 0 auto;
         width: 100%;
     }
@@ -433,8 +433,14 @@ video {
     font-family: 'Sniglet', cursive;
 }
 
-.card-body > h1 {
+.card-body>h1 {
     color: #000;
-}.card-body > p {
+}
+
+.card-body>p {
     color: #000;
+}
+
+.card-text-caption {
+    font-family: 'Sniglet', cursive;
 }
