@@ -1,0 +1,42 @@
+body {
+    font-family: 'DynaPuff', cursive !important;
+}
+
+.navbar-1-1.navbar-light .navbar-nav .nav-link {
+    color: #092a33;
+    transition: 0.3s;
+}
+
+.navbar-1-1.navbar-light .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.navbar-1-1 .btn-get-started {
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-weight: 500;
+}
+
+.navbar-1-1 .btn-get-started-blue {
+    background-color: #f80e0e;
+    transition: 0.3s;
+}
+
+.navbar-1-1 .btn-get-started-blue:hover {
+    background-color: #ff3a3a;
+    transition: 0.3s;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("/assets/images/hero-image.gif");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
