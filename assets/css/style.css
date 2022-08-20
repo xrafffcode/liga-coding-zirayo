@@ -248,3 +248,38 @@ body {
     opacity: 0;
     transition: opacity 1s;
 }
+
+
+.embed-responsive-item {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: block;
+    width: auto;
+}
+
+.proklamasi-video > h1 {
+    color: white;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.video-proklamasi {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
