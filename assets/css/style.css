@@ -1,250 +1,255 @@
 body {
-    font-family: 'DynaPuff', cursive !important;
+  font-family: "DynaPuff", cursive !important;
 }
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link:hover {
-    color: #EA4949;
+  color: #ea4949;
 }
 
-
 @media (min-width: 767px) {
-    .navbar-1-1.navbar-light .navbar-nav .nav-link {
-        color: #ffffff;
-        transition: 0.3s;
-    }
+  .navbar-1-1.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: 0.3s;
+  }
 
-    .navbar-1-1.navbar-light .navbar-nav .nav-link:hover {
-        color: #000000;
-    }
+  .navbar-1-1.navbar-light .navbar-nav .nav-link:hover {
+    color: #000000;
+  }
 
-    .hero-text {
-        margin-top: 180px !important;
-    }
+  .hero-text {
+    margin-top: 180px !important;
+  }
 }
 
 .navbar-1-1.navbar-light .navbar-nav .nav-link.active {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .navbar-1-1 .btn-get-started {
-    border-radius: 20px;
-    padding: 12px 30px;
-    font-weight: 500;
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-weight: 500;
 }
 
 .navbar-1-1 .btn-get-started-blue {
-    background-color: #f80e0e;
-    transition: 0.3s;
+  background-color: #f80e0e;
+  transition: 0.3s;
 }
 
 .navbar-1-1 .btn-get-started-blue:hover {
-    background-color: #ff3a3a;
-    transition: 0.3s;
+  background-color: #ff3a3a;
+  transition: 0.3s;
 }
 
 .img-header {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: -1;
 }
 
 .btn-color-theme {
-    color: white !important;
-    background-color: #d53333 !important;
+  color: white !important;
+  background-color: #d53333 !important;
 }
 
-
 .img-soekarno {
-    object-fit: cover;
-    border-radius: 35px
+  object-fit: cover;
+  border-radius: 35px;
 }
 
 .img-soekarno:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .hoverfade {
-    opacity: 0.8;
-    transition: 0.2s;
+  opacity: 0.8;
+  transition: 0.2s;
 }
 
 .hoverfade:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .rotatetrans {
-    transform: rotate(0deg);
-    transition: 0.2s;
+  transform: rotate(0deg);
+  transition: 0.2s;
 }
 
 .rotatetrans:hover {
-    transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 .tape {
-    z-index: 1;
-    background-color: rgba(255, 0, 0, 0.2);
-    box-shadow: inset 0 0 1em .5em hsla(0, 0%, 100%, .1);
-    height: 3em;
-    position: absolute;
-    margin-left: -2em;
-    transform: rotate(-30deg);
-    width: 9em;
-    -webkit-filter: drop-shadow(0 1px 1px rgba(255, 0, 0, 0.3));
+  z-index: 1;
+  background-color: rgba(255, 0, 0, 0.2);
+  box-shadow: inset 0 0 1em 0.5em hsla(0, 0%, 100%, 0.1);
+  height: 3em;
+  position: absolute;
+  margin-left: -2em;
+  transform: rotate(-30deg);
+  width: 9em;
+  -webkit-filter: drop-shadow(0 1px 1px rgba(255, 0, 0, 0.3));
 }
 
 .tape:after,
 .tape:before {
-    background-size: .4em .4em;
-    bottom: 0;
-    content: '';
-    position: absolute;
-    top: 0;
-    width: .2em;
+  background-size: 0.4em 0.4em;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0.2em;
 }
 
 .tape:after {
-    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 0, 0, 0.3) 50%),
-        linear-gradient(-45deg, transparent 50%, rgba(255, 0, 0, 0.3) 50%);
-    background-position: 0 100%;
-    left: -.2em;
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      rgba(255, 0, 0, 0.3) 50%
+    ),
+    linear-gradient(-45deg, transparent 50%, rgba(255, 0, 0, 0.3) 50%);
+  background-position: 0 100%;
+  left: -0.2em;
 }
 
 .tape:before {
-    background-image: linear-gradient(135deg, transparent 50%, rgba(255, 0, 0, 0.3) 50%),
-        linear-gradient(-135deg, transparent 50%, rgba(255, 0, 0, 0.3) 50%);
-    background-position: 100% 100%;
-    right: -.2em;
+  background-image: linear-gradient(
+      135deg,
+      transparent 50%,
+      rgba(255, 0, 0, 0.3) 50%
+    ),
+    linear-gradient(-135deg, transparent 50%, rgba(255, 0, 0, 0.3) 50%);
+  background-position: 100% 100%;
+  right: -0.2em;
 }
 
 .text-caption {
-    font-family: 'Sniglet', cursive;
-    font-size: 18px;
-    line-height: 2.5rem;
-    color: #646464;
+  font-family: "Sniglet", cursive;
+  font-size: 18px;
+  line-height: 2.5rem;
+  color: #646464;
 }
 
 .borders {
-    height: 475px;
-    width: 95%;
-    background: transparent;
-    border-radius: 10px;
-    transition: 1s;
-    position: relative;
+  height: 475px;
+  width: 95%;
+  background: transparent;
+  border-radius: 10px;
+  transition: 1s;
+  position: relative;
 }
 
 .borders:hover {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
 }
 
 .card-pahlawan {
-    height: 500px;
-    width: 100%;
-    background: #808080;
-    border-radius: 10px;
-    transition: background 0.8s;
-    overflow: hidden;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  height: 500px;
+  width: 100%;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .card0 {
-    background: url("/assets/images/myamin.jpg") center center no-repeat;
-    background-size: 100%;
+  background: url("/assets/images/myamin.jpg") center center no-repeat;
+  background-size: 100%;
 }
 
 .card0:hover {
-    background: url("/assets/images/myamin.jpg") left center no-repeat;
-    background-size: 600px;
+  background: url("/assets/images/myamin.jpg") left center no-repeat;
+  background-size: 600px;
 }
 
 .card0:hover h2 {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card0:hover .caption-pahlawan {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card1 {
-    background: url("/assets/images/sudirman.jpg") center center no-repeat;
-    background-size: 100%;
+  background: url("/assets/images/sudirman.jpg") center center no-repeat;
+  background-size: 100%;
 }
 
 .card1:hover {
-    background: url("/assets/images/sudirman.jpg") left center no-repeat;
-    background-size: 600px;
+  background: url("/assets/images/sudirman.jpg") left center no-repeat;
+  background-size: 600px;
 }
 
 .card1:hover h2 {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card1:hover .caption-pahlawan {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card2 {
-    background: url("/assets/images/syahrir.jpg") center center no-repeat;
-    background-size: 100%;
+  background: url("/assets/images/syahrir.jpg") center center no-repeat;
+  background-size: 100%;
 }
 
 .card2:hover {
-    background: url("/assets/images/syahrir.jpg") left center no-repeat;
-    background-size: 600px;
+  background: url("/assets/images/syahrir.jpg") left center no-repeat;
+  background-size: 600px;
 }
 
 .card2:hover h2 {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card2:hover .caption-pahlawan {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card-pahlawan h2 {
-    color: #fff;
-    margin: 20px;
-    opacity: 0;
-    transition: opacity 1s;
-    font-family: 'Sniglet', cursive;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-family: "Sniglet", cursive;
 }
 
 .card-pahlawan p {
-    font-family: 'Sniglet', cursive;
-    opacity: 0;
+  font-family: "Sniglet", cursive;
+  opacity: 0;
 }
 
 .bg-theme {
-    background-color: #f80e0e;
+  background-color: #f80e0e;
 }
 
 .text-pahlawan {
-    position: absolute;
-    margin: 20px;
-    color: #fff;
-    height: 130px;
-    top: 226px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  position: absolute;
+  margin: 20px;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .caption-pahlawan {
-    opacity: 0;
-    transition: opacity 1s;
+  opacity: 0;
+  transition: opacity 1s;
 }
