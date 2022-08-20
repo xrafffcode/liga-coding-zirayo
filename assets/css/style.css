@@ -58,8 +58,6 @@ body {
     visibility: visible;
 }
 
-
-
 .content h1 {
     margin-bottom: -10px;
     color: #03a9f4;
@@ -413,4 +411,10 @@ video {
 
 .text-prok {
     font-family: 'Sniglet', cursive;
+}
+
+.card-body > h1 {
+    color: #000;
+}.card-body > p {
+    color: #000;
 }
